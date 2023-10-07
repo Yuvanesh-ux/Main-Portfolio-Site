@@ -6,8 +6,8 @@ import blobBottom from '../../assets/blob3.svg'
 import blobBottom2 from '../../assets/blob2.svg'
 import blobText from '../../assets/blob1.svg'
 import Grain from '../../assets/grain.jpg'
-import LeftButton from '../../assets/left.svg'
-import RightButton from '../../assets/right.svg'
+import LeftButton from '../../assets/Left.svg'
+import RightButton from '../../assets/Right.svg'
 import Gpt4all from '@/components/cards/gpt4all'
 import Experience from '@/components/cards/experience'
 import { useEffect, useState } from 'react'
@@ -17,7 +17,8 @@ import { useRouter } from 'next/router'
 export default function Home() {
   const [page, setPage] = useState(2)
 
-
+  console.log("ODJAL");
+  
   return (
     <>
       <div className='w-full max-h-fit flex flex-col'>
@@ -70,10 +71,10 @@ export default function Home() {
                 <Experience />
               }
             </div>
-            <div className='absolute w-fit h-fit top-[45%] -left-[8%] hover:scale-125 cursor-pointer transition-transform' onClick={() => { setPage(prevPage => page - 1); }}>
+            <div className='absolute w-fit h-fit top-[40%] -left-[15%] hover:scale-110 active:scale-95 cursor-pointer transition-transform' onClick={() => { console.log("hi") }}>
               <Image src={LeftButton} alt="" />
             </div>
-            <div className='absolute w-fit h-fit top-[45%] -right-[8%] hover:scale-125 cursor-pointer transition-transform ' onClick={() => { setPage(prevPage => page + 1); }}>
+            <div className='absolute w-fit h-fit top-[40%] -right-[15%] hover:scale-110 active:scale-95 cursor-pointer transition-transform ' onClick={() => { console.log("hi") }}>
               <Image src={RightButton} alt="" />
             </div>
           </div>
