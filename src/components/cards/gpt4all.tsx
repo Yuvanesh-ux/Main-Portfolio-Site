@@ -27,7 +27,7 @@ export default function Gpt4all() {
       </div>
       <div className='absolute w-full h-full top-0 left-0 '><Image className='w-full h-full mix-blend-soft-light opacity-40' src={Grain} alt="" /></div>
       <Image
-        className='absolute top-0 right-0 z-0'
+        className='absolute bottom-0 right-0 z-0'
         priority
         src={Blob1}
         alt=""

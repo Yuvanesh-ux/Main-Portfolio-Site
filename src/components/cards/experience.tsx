@@ -12,7 +12,7 @@ import Logo from '../../../assets/experience/nomic_logo_white 1.png'
 
 export default function Experience() {
   return (
-    <div className='relative w-[55rem] h-[37rem] p-8 flex flex-col justify-start bg-indigo-400' onClick={console.log("HI")}>
+    <div className='relative w-[55rem] h-[37rem] p-8 flex flex-col justify-start bg-indigo-400'>
       <div className='w-fit h-fit py-5 flex flex-col justify-start gap-1'>
         <div className='text-white text-8xl font-black z-10 mix-blend-overlay'>Experience</div>
         <div className="w-96 h-9 pt-5 pl-1 text-white text-base font-black mix-blend-soft">"Destiny Is A Funny Thing. You Never Know How Things Are Going To Work Out."</div>

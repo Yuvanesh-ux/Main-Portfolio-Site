@@ -16,8 +16,6 @@ import { useRouter } from 'next/router'
 
 export default function Home() {
   const [page, setPage] = useState(2)
-
-  console.log("ODJAL");
   
   return (
     <>
@@ -71,10 +69,10 @@ export default function Home() {
                 <Experience />
               }
             </div>
-            <div className='absolute w-fit h-fit top-[40%] -left-[15%] hover:scale-110 active:scale-95 cursor-pointer transition-transform' onClick={() => { console.log("hi") }}>
+            <div className='absolute w-fit h-fit top-[40%] -left-[15%] hover:scale-110 active:scale-95 cursor-pointer transition-transform' onClick={() => { setPage(page - 1) }}>
               <Image src={LeftButton} alt="" />
             </div>
-            <div className='absolute w-fit h-fit top-[40%] -right-[15%] hover:scale-110 active:scale-95 cursor-pointer transition-transform ' onClick={() => { console.log("hi") }}>
+            <div className='absolute w-fit h-fit top-[40%] -right-[15%] hover:scale-110 active:scale-95 cursor-pointer transition-transform ' onClick={() => { setPage(page + 1) }}>
               <Image src={RightButton} alt="" />
             </div>
           </div>
