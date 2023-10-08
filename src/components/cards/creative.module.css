@@ -1,0 +1,41 @@
+.imageContainer {
+  width: 24rem;  
+  border: 2px;
+  border-radius: 5px;
+  border-color: rbga(0,0,0,0.7);
+  /* overflow: hidden; */
+}
+
+.imageContent {
+  display: block;
+  max-width: 100%;
+  border: 2px;
+  border-radius: 5px;
+  border-color: rbga(0,0,0,0.7);
+}
+
+.infiniteScrollUp {
+  animation: scrollUp 35s infinite linear; /* Adjust 15s as required */
+}
+
+.infiniteScrollDown {
+  animation: scrollDown 35s infinite linear; /* Adjust 15s as required */
+}
+
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%); /* Scroll full length upwards */
+  }
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%); /* Scroll full length downwards */
+  }
+}
