@@ -1,11 +1,11 @@
 'use client'
 
 import Image from 'next/image'
-import Gif from '../../../assets/gif.gif'
-import Grain from '../../../assets/grain.jpg'
-import Blob1 from '../../../assets/gpt4all/blob1.svg'
-import Blob2 from '../../../assets/gpt4all/blob2.svg'
-import Blob3 from '../../../assets/gpt4all/blob3.svg'
+import Gif from '@/assets/gif.gif'
+import Grain from '@/assets/grain.jpg'
+import Blob1 from '@/assets/gpt4all/blob1.svg'
+import Blob2 from '@/assets/gpt4all/blob2.svg'
+import Blob3 from '@/assets/gpt4all/blob3.svg'
 
 
 export default function Gpt4all() {
@@ -18,7 +18,7 @@ export default function Gpt4all() {
       <div className="w-[33rem] h-[18rem] pt-1 bg-zinc-900 rounded-2xl border border-white justify-center items-center inline-flex overflow-hidden z-10">
         <Image src={Gif} className="tran" alt="" />
       </div>
-      <div className="absolute top-10 right-3 w-28 h-16 pb-0.5 flex-col justify-center items-start gap-0.5 inline-flex">
+      <div className="absolute top-[3.5rem] right-8 w-28 h-16 pb-0.5 flex-col justify-center items-start gap-0.5 inline-flex">
         <div className="w-28 h-20 gap-3 relative flex-col justify-start items-start flex">
           {/* <div className="w-28 h-7 bg-rose-200 rounded-3xl" /> */}
           <div className="w-28 h-7 flex items-center pl-2 bg-rose-200 rounded-3xl text-zinc-800 text-base font-black">50.6 K ⭐ </div>

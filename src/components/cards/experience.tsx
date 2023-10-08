@@ -1,13 +1,12 @@
 'use client'
 
 import Image from 'next/image'
-import Gif from '../../../assets/gif.gif'
-import Grain from '../../../assets/grain.jpg'
-import Blob1 from '../../../assets/experience/blob1.svg'
-import Blob2 from '../../../assets/experience/blob2.svg'
-import Blob3 from '../../../assets/experience/blob3.svg'
-import Map from '../../../assets/experience/map.png'
-import Logo from '../../../assets/experience/nomic_logo_white 1.png'
+import Grain from '@/assets/grain.jpg'
+import Blob1 from '@/assets/experience/blob1.svg'
+import Blob2 from '@/assets/experience/blob2.svg'
+import Blob3 from '@/assets/experience/blob3.svg'
+import Map from '@/assets/experience/map.png'
+import Logo from '@/assets/experience/nomic_logo_white 1.png'
 
 
 export default function Experience() {
@@ -17,7 +16,7 @@ export default function Experience() {
         <div className='text-white text-8xl font-black z-10 mix-blend-overlay'>Experience</div>
         <div className="w-96 h-9 pt-5 pl-1 text-white text-base font-black mix-blend-soft">"Destiny Is A Funny Thing. You Never Know How Things Are Going To Work Out."</div>
       </div>
-      <div className="w-96 h-96 pr-64 pt-10 pb-5 justify-start items-center inline-flex">
+      <div className="w-96 h-96 pr-64 pt-10 pb-5 justify-start items-center flex">
         <div className="w-fit self-stretch pr-52 pb-6 justify-start items-start gap-1.5 inline-flex " >
           <div className="w-fit h-40 relative rounded-2x flex-col justify-start items-start flex overflow-hidden">
             <div className="w-72 h-full relative bg-white mix-blend-overlay opacity-100 z-10 rounded-2xl border border-neutral-300" />
